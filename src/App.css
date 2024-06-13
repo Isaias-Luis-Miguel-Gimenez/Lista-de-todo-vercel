@@ -1,0 +1,51 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.body {
+  background-color: cadetblue;
+  background-size: 400%;
+  animation: cambiarColor 2s ease-in-out infinite alternate;
+}
+
+@keyframes cambiarColor {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2e518b;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  border-radius: 50px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #3e639b;
+  transform: scale(1.05);
+}
+
+input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  transition: box-shadow 0.3s;
+}
+
+input:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
